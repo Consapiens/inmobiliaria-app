@@ -1,12 +1,14 @@
 import React, { Component, useState } from 'react';
 import { selectItem } from '../../../shared/models/select.model';
 import _Button from '../../atoms/button/button';
+import Input from '../../atoms/input/input';
 import _Select from '../../atoms/select/select';
 import './banner.scss';
 
 export default function Banner() {
   const [tipoInmueble, setTipoInmueble] = useState('');
   const [caracteristicaInmueble, setCaracteristicaInmueble] = useState('');
+  const [inputInmueble, setInputInmueble] = useState('');
 
   const tiposInmueble: selectItem[] = [
     { value: 1, description: 'Apartamento' },
@@ -23,6 +25,9 @@ export default function Banner() {
   };
   const changeCaracteristicaInmueble = (value: string) => {
     setCaracteristicaInmueble(value);
+  };
+  const changeInputInmueble = (value: string) => {
+    setInputInmueble(value);
   };
 
   return (
@@ -42,6 +47,7 @@ export default function Banner() {
             value={caracteristicaInmueble}
             onChange={changeCaracteristicaInmueble}
           />
+          <Input placeholder="Ciudad, Barrio" onChange={changeInputInmueble} />
           <_Button />
         </div>
       </div>

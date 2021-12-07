@@ -5,7 +5,7 @@ import './button.scss';
 const _Button = () => {
   return (
     <Button variant="outlined" size="small">
-      Small
+      Enviar
     </Button>
   );
 };
