@@ -1,0 +1,6 @@
+/* Responsive */
+@mixin from($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
