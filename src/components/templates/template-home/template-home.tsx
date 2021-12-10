@@ -1,18 +1,18 @@
 import React from 'react';
 import Banner from '../../organisms/banner/banner';
-import Body from '../../organisms/body/body';
 import Footer from '../../organisms/footer/footer';
 import Header from '../../organisms/header/header';
+import Inmuebles from '../../organisms/inmuebles/inmuebles';
 
-const Home = () => {
+const TemplateHome = () => {
   return (
     <div className="home">
       <Header />
       <Banner />
-      <Body />
+      <Inmuebles />
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default TemplateHome;

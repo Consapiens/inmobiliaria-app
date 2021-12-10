@@ -1,0 +1,29 @@
+.footer {
+  height: 150px;
+  background-color: rgb(181 181 181 / 30%);
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    img {
+      width: 10em;
+      margin: 15% 0 0 0;
+    }
+  }
+  &__description {
+    width: 40%;
+    font-size: 1.1rem;
+    ul {
+      list-style-type: none !important;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    height: auto;
+    &__wrap {
+      display: block;
+    }
+    &__description {
+      width: 100%;
+    }
+  }
+}

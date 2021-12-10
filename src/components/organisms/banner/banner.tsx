@@ -8,7 +8,7 @@ import './banner.scss';
 export default function Banner() {
   const [tipoInmueble, setTipoInmueble] = useState('');
   const [caracteristicaInmueble, setCaracteristicaInmueble] = useState('');
-  const [inputInmueble, setInputInmueble] = useState('');
+  const [ciudad, setCiudad] = useState('');
 
   const tiposInmueble: selectItem[] = [
     { value: 1, description: 'Apartamento' },
@@ -23,17 +23,19 @@ export default function Banner() {
   const changeTipoInmueble = (value: string) => {
     setTipoInmueble(value);
   };
+
   const changeCaracteristicaInmueble = (value: string) => {
     setCaracteristicaInmueble(value);
   };
-  const changeInputInmueble = (value: string) => {
-    setInputInmueble(value);
+
+  const changeCiudad = (value: string) => {
+    setCiudad(value);
   };
 
   return (
     <div className="banner">
       <div className="banner__wrap">
-        <h2>Encuentra inmuebles en venta y arriendo:</h2>
+        <h3>Encuentra inmuebles en venta:</h3>
         <div className="banner__form">
           <_Select
             label="Tipo de inmueble"
@@ -47,7 +49,11 @@ export default function Banner() {
             value={caracteristicaInmueble}
             onChange={changeCaracteristicaInmueble}
           />
-          <Input placeholder="Ciudad, Barrio" onChange={changeInputInmueble} />
+          <Input
+            value={ciudad}
+            placeholder="Ciudad, Barrio"
+            onChange={changeCiudad}
+          />
           <_Button />
         </div>
       </div>

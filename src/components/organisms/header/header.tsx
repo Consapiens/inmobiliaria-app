@@ -1,11 +1,13 @@
 import React from 'react';
 import Logo from '../../atoms/logo/logo';
-import Nav from '../../molecules/nav/nav';
+import './header.scss';
 
 const Header = () => {
   return (
     <div className="header">
-      <Logo />
+      <a href="/">
+        <Logo />
+      </a>
     </div>
   );
 };

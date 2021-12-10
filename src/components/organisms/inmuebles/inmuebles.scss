@@ -1,0 +1,39 @@
+.inmueble {
+  width: 100%;
+  height: auto;
+
+  h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 3% 5% 0;
+  }
+
+  &__card {
+    width: 265px;
+    height: 194px;
+    margin: 0 auto 13% auto;
+    img {
+      background-repeat: no-repeat;
+      height: 194px;
+      background-size: 100% 100%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    height: auto;
+    &__wrap {
+      width: 100%;
+      display: block;
+    }
+    &__card {
+      margin: 5% auto 5% auto;
+      height: 310px;
+    }
+  }
+}

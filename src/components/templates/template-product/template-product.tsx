@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../organisms/footer/footer';
 import Header from '../../organisms/header/header';
 
-const ProductDetail = () => {
+const InmuebleDetail = () => {
   return (
     <div className="product-detail">
       <Header />
@@ -11,4 +11,4 @@ const ProductDetail = () => {
   );
 };
 
-export default ProductDetail;
+export default InmuebleDetail;
