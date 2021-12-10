@@ -2,10 +2,14 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import './button.scss';
 
-const _Button = () => {
+interface Props {
+  text: string;
+}
+
+const _Button: React.FC<Props> = (props) => {
   return (
     <Button variant="outlined" size="small">
-      Enviar
+      {props.text}
     </Button>
   );
 };

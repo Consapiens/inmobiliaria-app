@@ -1,0 +1,41 @@
+.details {
+  width: 90%;
+  margin: auto;
+  &__wrap {
+    height: auto;
+  }
+
+  &__volver {
+    width: 90%;
+    margin: 1% 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    Button {
+      color: white;
+      background-color: #818181;
+      border: none;
+      width: 150px;
+      &:hover {
+        background-color: rgb(95, 95, 95);
+        border: none;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__image {
+    width: 85%;
+    height: 400px;
+    margin: 3% auto;
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: auto;
+      height: 100%;
+      margin: 0 15px;
+    }
+  }
+}

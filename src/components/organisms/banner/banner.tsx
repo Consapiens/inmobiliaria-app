@@ -54,7 +54,7 @@ export default function Banner() {
             placeholder="Ciudad, Barrio"
             onChange={changeCiudad}
           />
-          <_Button />
+          <_Button text="Buscar" />
         </div>
       </div>
     </div>
