@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-around;
     margin: auto;
+    width: 80%;
     img {
       width: 10em;
       margin: 15% 0 0 0;
@@ -13,8 +14,11 @@
   &__description {
     width: 40%;
     font-size: 1.1rem;
+    text-align: center;
     ul {
       list-style-type: none !important;
+      margin-inline-start: 0;
+      padding-inline-start: 0;
     }
   }
   @media screen and (max-width: 700px) {
